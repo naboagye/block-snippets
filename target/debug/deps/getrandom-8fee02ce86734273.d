@@ -1,0 +1,12 @@
+/Users/The5AMDev/web3/firstsolanaproject/target/debug/deps/getrandom-8fee02ce86734273.rmeta: /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/lib.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/error.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util_libc.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/use_file.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/macos.rs
+
+/Users/The5AMDev/web3/firstsolanaproject/target/debug/deps/libgetrandom-8fee02ce86734273.rlib: /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/lib.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/error.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util_libc.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/use_file.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/macos.rs
+
+/Users/The5AMDev/web3/firstsolanaproject/target/debug/deps/getrandom-8fee02ce86734273.d: /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/lib.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/error.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util_libc.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/use_file.rs /Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/macos.rs
+
+/Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/lib.rs:
+/Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/error.rs:
+/Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util.rs:
+/Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/util_libc.rs:
+/Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/use_file.rs:
+/Users/The5AMDev/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.6/src/macos.rs:
