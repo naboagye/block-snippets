@@ -12,6 +12,8 @@ defaults:
 
 env:
   CARGO_TERM_COLOR: always
+  SOLANA_VERSION: v1.9.9
+  ANCHOR_VERSION: 0.24.2
 
 jobs:
   vercel:
@@ -27,7 +29,15 @@ jobs:
         run: |
           npm install
           npm run build
-
+      - run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        shell: bash
+      - run: echo "/home/runner/.cargo/bin" >> $GITHUB_PATH
+        shell: bash
+      - run: curl -sSfL https://release.solana.com/$SOLANA_VERSION/install | sh
+        shell: bash
+      - run: echo "/home/runner/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+        shell: bash
+      - run: npm i -g @project-serum/anchor-cli@$ANCHOR_VERSION ts-mocha typescript
       - name: Run tests
         run: anchor test
         working-directory: ./
