@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import twitterLogo from "./assets/twitter-logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -506,7 +506,7 @@ const App = () => {
     return () => window.removeEventListener("load", onLoad);
   }, []);
 
-  const getNotesList = async () => {
+  const getNotesList = useCallback(async () => {
     try {
       const provider = getProvider();
       const program = new Program(idl, programID, provider);
@@ -520,7 +520,7 @@ const App = () => {
       console.log("Error in getNotesList: ", error);
       setNotesList(null);
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (walletAddress) {
