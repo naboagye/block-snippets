@@ -14,19 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run tests
-        run: anchor test
-      - name: Deploy to Devnet
-        run: anchor deploy
-      #     - name: Copy IDL
-      #       run:
-      - name: Cache Dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
-
       - name: Setup Node 14
         uses: actions/setup-node@v2
         with:
@@ -34,8 +21,15 @@ jobs:
 
       - name: Build
         run: |
-          yarn install --frozen-lockfile
+          npm install
           npm run build
+
+      - name: Run tests
+        run: anchor test
+      - name: Deploy to Devnet
+        run: anchor deploy
+      #     - name: Copy IDL
+      #       run:
 
       #     - name: Run Tests Locally
       #       run: npm run test
@@ -63,3 +57,4 @@ jobs:
 #         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
 #         vercel-args: '--prod'
 #         scope: ${{ secrets.VERCEL_ORG_ID }}
+
