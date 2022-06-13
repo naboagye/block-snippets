@@ -527,7 +527,7 @@ const App = () => {
       console.log("Fetching Notes list...");
       getNotesList();
     }
-  }, [walletAddress]);
+  }, [walletAddress, getNotesList]);
 
   return (
     <div className="App">
