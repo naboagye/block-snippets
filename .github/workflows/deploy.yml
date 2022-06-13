@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ["main"]
 
+defaults:
+  run:
+    working-directory: app
+
 env:
   CARGO_TERM_COLOR: always
 
@@ -26,8 +30,10 @@ jobs:
 
       - name: Run tests
         run: anchor test
+        working-directory: ./
       - name: Deploy to Devnet
         run: anchor deploy
+        working-directory: ./
       #     - name: Copy IDL
       #       run:
 
