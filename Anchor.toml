@@ -8,7 +8,7 @@ url = "https://anchor.projectserum.com"
 
 [provider]
 cluster = "devnet"
-wallet = "/Users/The5AMDev/.config/solana/id.json"
+wallet = "/home/solana/id.json"
 
 [scripts]
 test = "node tests/firstsolanaproject.js"
