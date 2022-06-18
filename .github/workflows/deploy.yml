@@ -33,12 +33,12 @@ jobs:
       # - name: Build
       #   run: anchor build
       #   working-directory: ./
+      - name: list
+        run: pwd && ls -ltra
       - name: Run tests
         run: anchor test
-        working-directory: ./
       - name: Deploy to Devnet
         run: anchor deploy
-        working-directory: ./
       # - name: Setup Node 14
       #   uses: actions/setup-node@v2
       #   with:
