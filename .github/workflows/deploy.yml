@@ -41,7 +41,7 @@ jobs:
         working-directory: ./
       - name: Get fake coins and check balance
         run: |
-          solana airdrop 2 $(solana-keygen pubkey /home/solana/id.json) --url https://api.devnet.solana.com
+          solana airdrop 2
           solana balance
         working-directory: ./
       - name: Install npm dependencies
