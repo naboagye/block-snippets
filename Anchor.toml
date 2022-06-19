@@ -1,13 +1,13 @@
 [features]
 seeds = false
-[programs.devnet]
+[programs.localnet]
 firstsolanaproject = "EdoR19BL5QuyeQHZaJWxFSjDzDcg9MWhMXEun8btMhLV"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "devnet"
+cluster = "localnet"
 wallet = "/home/solana/id.json"
 
 [scripts]
