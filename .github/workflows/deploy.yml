@@ -32,17 +32,17 @@ jobs:
         run: solana-keygen new -o /home/solana/id.json
         working-directory: ./
       - name: Set solana target cluster to local
-        run: solana config set --url http:localhost:8899
+        run: solana config set --url localhost
       - name: Set solana target cluster to local
         run: solana config set --keypair /home/solana/id.json
         working-directory: ./
       - name: Check solana config
         run: solana config get
         working-directory: ./
-      - name: Get fake coins and check balance
-        run: |
-          solana airdrop 2
-          solana balance
+      # - name: Get fake coins and check balance
+      #   run: |
+      #     solana airdrop 2
+      #     solana balance
         working-directory: ./
       - name: Install npm dependencies
         run: npm install
@@ -54,9 +54,9 @@ jobs:
       - name: Run tests
         run: anchor test
         working-directory: ./
-      - name: Deploy to Devnet
-        run: anchor deploy
-        working-directory: ./
+      # - name: Deploy to Devnet
+      #   run: anchor deploy
+      #   working-directory: ./
       # - name: Setup Node 14
       #   uses: actions/setup-node@v2
       #   with:
