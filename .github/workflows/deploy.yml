@@ -33,13 +33,15 @@ jobs:
         working-directory: ./
       - name: Set solana target cluster to local
         run: solana config set --url http:localhost:8899
+      - name: Set solana target cluster to local
+        run: solana config set --keypair /home/solana/id.json
         working-directory: ./
       - name: Check solana config
         run: solana config get
         working-directory: ./
       - name: Get fake coins and check balance
         run: |
-          solana airdrop 2
+          solana airdrop 2 $(solana-keygen pubkey /home/solana/id.json) --url https://api.devnet.solana.com
           solana balance
         working-directory: ./
       - name: Install npm dependencies
