@@ -49,8 +49,8 @@ jobs:
       - name: Build
         run: anchor build
         working-directory: ./
-      - name: list
-        run: pwd && ls -ltra
+      - name: Install anchor
+        run: npm install @project-serum/anchor @solana/web3.js
       - name: Run tests
         run: anchor test
         working-directory: ./
