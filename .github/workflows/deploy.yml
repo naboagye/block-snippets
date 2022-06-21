@@ -46,11 +46,12 @@ jobs:
         # working-directory: ./
       - name: Install npm dependencies
         run: npm install
-      - name: Build
-        run: anchor build
+      # - name: Build
+      #   run: anchor build
         working-directory: ./
       - name: Install anchor
-        run: npm install @project-serum/anchor @solana/web3.js
+        run: npm install -g @project-serum/anchor @solana/web3.js
+        working-directory: ./
       - name: Run tests
         run: anchor test
         working-directory: ./
